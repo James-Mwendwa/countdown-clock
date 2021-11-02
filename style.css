@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Roboto:wght@100&family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Zen+Antique&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F8FF;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+.Countdown {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    height: 100vh;
+}
+
+.content {
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+}
+
+
+h2 {
+    font-family: 'Hind Siliguri', sans-serif;
+    color: navy;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+h3 {
+   font-family: 'Hind Siliguri', sans-serif;
+   font-size: 1.6rem;
+   color: #000;
+}
+
+p {
+    font-family: 'Zen Antique', serif;
+    font-size: 1.3rem;
+    color: gray;
+    margin-top: 1.5rem;
+}
+
+span {
+   background-color: #241571;
+   border: 1px solid #241571;
+   font-size: 1.2rem;
+   color: #fff;
+   padding: 1rem;
+   text-align: center;
+   border-radius: 0.7rem;
+   font-weight: bold;
+}
