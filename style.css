@@ -20,13 +20,13 @@ img {
     height: 350px;
 }
 
-/*.Countdown {
-    
+.Countdown {
+    display: flex;
     flex-wrap: wrap;
     margin-left: 2rem;
     margin-top: 3rem;
     height: 100vh;
-} */
+} 
 
 .content {
     margin-top: 1.5rem;
@@ -55,13 +55,4 @@ p {
     margin-top: 1.5rem;
 }
 
-/*span {
-   background-color: #241571;
-   border: 1px solid #241571;
-   font-size: 1.2rem;
-   color: #fff;
-   padding: 1rem;
-   text-align: center;
-   border-radius: 0.7rem;
-   font-weight: bold;
-}
+
