@@ -28,10 +28,8 @@ const weekdays = [
 const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelectorAll("#deadline");
 
-const days = document.querySelector(".days");
-const hours = document.querySelector(".hours");
-const minutes = document.querySelector(".minutes");
-const seconds = document.querySelector(".seconds");
+const items = document.querySelectorAll(".deadline-format h4");
+
 
 let futureDate = new Date(2021, 10, 26, 11, 59, 59);
 
@@ -67,18 +65,34 @@ function getRemainingTime () {
 
     let days = t/oneDay;
     days = Math.floor(days);
-
-    console.log(days);
-
     let remHours = Math.floor((t % oneDay) / oneHour);
-    console.log(remHours);
-
     let remMinutes = Math.floor((t % oneHour) / oneMinute);
-
-    console.log(remMinutes);
-
     let remSeconds = Math.floor((t % oneMinute) / 1000);
-    console.log(remSeconds);
+
+    const values = [days, remHours, remMinutes, remSeconds];
+
+    function format(item) {
+        if(item < 10) {
+            return (item = `0${item}`);
+        }
+        return item;
+    }
+
+    items.forEach(function (item, index) {
+        item.innerHTML = format(values[index]);
+        
+    });
+
+    if(t < 0) {
+        clearInterval(countdown);
+        deadline.innerHTML = `<h4 class="expired">Sorry, the Offer expired</h4>`;
+    }
+
+    
+    
 }
+
+
+let countdown = setInterval(getRemainingTime, 1000);
 
 getRemainingTime();
