@@ -24,7 +24,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     height: 100vh;
 } 
 
@@ -55,4 +55,38 @@ p {
     margin-top: 1.5rem;
 }
 
+.deadline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.deadline-format {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+
+h4 {
+     font-family: 'Hind Siliguri', sans-serif;
+     font-size: 2rem;
+     font-weight: bold;
+     background-color: darkblue;
+     color: cornsilk;
+     text-align: center;
+     padding: 6px;
+     border-radius: 10px;
+
+
+}
+
+.deadline-format span {
+    font-family: 'Hind Siliguri', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: darkblue;
+    font-weight: bold;
+    
+}
 
