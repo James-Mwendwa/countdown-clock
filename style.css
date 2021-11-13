@@ -90,3 +90,9 @@ h4 {
     
 }
 
+.expired {
+    font-size: 1.3rem;
+    color: darkblue;
+    font-family: 'Zen Antique', serif;
+}
+
